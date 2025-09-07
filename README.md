@@ -1,65 +1,78 @@
-<!DOCTYPE html>
-<html lang="tr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ali Berkant Eker | Portfolyo</title>
-    <style>
-        body { font-family: sans-serif; line-height: 1.6; margin: 20px; color: #333; }
-        .container { max-width: 800px; margin: auto; padding: 20px; }
-        h1, h2, h3 { color: #005f73; }
-        .project-link { display: block; margin-bottom: 10px; font-size: 1.1em; }
-    </style>
-</head>
-<body>
+![thumbnail](https://user-images.githubusercontent.com/16558205/180779213-ea740975-3df1-460a-a964-0a623ee25872.png)
 
-<div class="container">
-    <h1>Ali Berkant Eker</h1>
-    <p>Erciyes Üniversitesi'nde Astronomi ve Uzay Bilimleri alanında yüksek lisans öğrencisiyim. Gömülü sistemler, telemetri ve uydu teknolojileri üzerine çalışmalar yürütüyor, bu alanlarda çeşitli projeler geliştiriyorum.</p>
+### Live - https://react-portfolio-template.netlify.app
+### Demo Video - https://www.youtube.com/watch?v=62_HLbx2zLQ&t=9s
+### Open Source UI Components - https://ui.chetanverma.com/
 
-    <p>KAYSat Model Uydu Takımı'nda 3 yılı aşkın süredir takım kaptanı olarak görev alıyorum. Bu süreçte:</p>
+### Tutorials
 
-    <ul>
-        <li>Sistem Mühendisliği, proje planlama ve teknik süreçlerin yönetimini üstlendim.</li>
-        <li>Ekip koordinasyonu ve görev dağılımını yürüttüm.</li>
-        <li>İniş Sistemleri, uydu modelleme, entegrasyon ve tasarım süreçlerini üstlendim.</li>
-    </ul>
+Youtube - https://www.youtube.com/watch?v=8cmJ2kR4SpM
 
-    <p>Çalışmalarımda özellikle uydu teknolojileri, gömülü sistem tasarımı ve telemetri altyapıları konularına odaklanıyorum.</p>
+Blog - https://www.chetanverma.com/blog/how-to-build-a-portfolio-website-using-nextjs-and-tailwindcss
 
-    <hr>
+### Features - 
 
-    <h2>Projelerim</h2>
+- Modern Stack (Next.js + TailwindCSS)
+- Minimal Design
+- Easy To Browse
+- Easy To Customize your details With GUI
+- Blog Crud (Create, Read, Update, Delete blog with easy to use UI).
+- Dark Mode
 
-    <ul>
-        <li><strong>NOCTUS-06:</strong> Tek başıma geliştirdiğim, "Yer tabanlı fonksiyonel küp uydu ve yer istasyonu platformu" projesidir. Detaylar için <a href="https://github.com/aliberkanteker/NOCTUS-06">NOCTUS-06 deposunu ziyaret edin</a>.</li>
-        <li><strong>KAYSAT Model Uydu:</strong> TEKNOFEST 2023 Model Uydu Yarışması'nda takım lideri ve elektrik alt sistem tasarımcısı olarak görev aldığım projedir.</li>
-        <li><strong>TICOSAT:</strong> TEKNOFEST 2025 Model Uydu Yarışması'nda üzerinde çalıştığımız projemiz. İniş kontrol, tasarım & modelleme ve haberleşme alt sistemlerinin tasarımını üstleniyorum.</li>
-    </ul>
 
-    <hr>
+### Sections
 
-    <h2>Becerilerim</h2>
+- Header
+- Work
+- Services
+- About
+- Contact
+- Markdown Blog
 
-    <ul>
-        <li><strong>Yazılım ve Kodlama:</strong> Python, C++, Gömülü Sistemler, Flask, Electron.</li>
-        <li><strong>Donanım ve Tasarım:</strong> SolidWorks, Tinkercad, Elektrik-Elektronik, Robotik Kodlama.</li>
-        <li><strong>Uzmanlık:</strong> Sistem Mühendisliği, sistem entegrasyonu, telemetri altyapıları, uydu mekanik & elektronik tasarım.</li>
-    </ul>
 
-    <hr>
+### How To Use
 
-    <h2>Bana Ulaşın</h2>
+- Clone this repo
+- run `yarn`
+- `yarn dev`
 
-    <ul>
-        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ali-berkant-eker">linkedin.com/in/ali-berkant-eker</a></li>
-        <li><strong>Email:</strong> <a href="mailto:aliberkanteker06@gmail.com">aliberkanteker06@gmail.com</a></li>
-    </ul>
 
-</div>
+### How To Deploy - 
 
-</body>
-</html>
+- There are many ways to Deploy this repo.
+- here we are gonna use netlify
+- Login into netlify with github
+- after login select the forked repo or the repo you want to deploy
+- after selecting netlify will automatially deploy your website.
+
+Quickes way to deploy this repo - 
+
+[![Deploy To Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/chetanverma16/react-portfolio-template)
+
+
+### How To Contribute - 
+
+I would be very happy to review your PRs and all the awesome things that you can improve on this portfolio.
+
+
+### Tech Stack Used - 
+- Next.js
+- TailwindCSS
+
+
+### Thanks
+
+If you liked this portfolio template, don't forget to give it a ⭐.
+
+## Awesome Contributors
+[@Aryan3212](https://github.com/Aryan3212) [@achu-krishna](https://github.com/achu-krishna)
+
+## Supporting
+Many hours of hard work have gone into this project. Your support will be very appreciated!
+
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/chetanverma)
+
+
 
 
 
