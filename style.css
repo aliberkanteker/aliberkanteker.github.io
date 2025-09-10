@@ -4,8 +4,8 @@ body {
     line-height: 1.7;
     margin: 0;
     padding: 20px;
-    background-color: #12181b; /* Dark background */
-    color: #cdd5e0; /* Light text */
+    background-color: #ffffff; /* --- DEĞİŞİKLİK: Beyaz arka plan --- */
+    color: #4a4a4a; /* --- DEĞİŞİKLİK: Koyu gri metin --- */
 }
 
 /* Main Container */
@@ -13,152 +13,104 @@ body {
     max-width: 900px;
     margin: 40px auto;
     padding: 40px;
-    background-color: #1a2228; /* Slightly lighter dark */
-    border: 1px solid #333c44;
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    background-color: #ffffff; /* --- DEĞİŞİKLİK: Beyaz arka plan --- */
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
 }
 
 /* Headings */
-h1, h2, h3 {
-    color: #ffffff;
-    border-bottom: 2px solid #00aaff; /* Accent color */
+h1, h2, h3, h4 {
+    color: #2c3e50; /* --- DEĞİŞİKLİK: Koyu mavi-gri başlıklar --- */
+    border-bottom: 2px solid #3498db; /* --- DEĞİŞİKLİK: Açık mavi çizgi --- */
     padding-bottom: 10px;
     margin-top: 40px;
     margin-bottom: 20px;
 }
-h1 {
-    font-size: 2.5em;
-    text-align: center;
-    border-bottom: none;
-    margin-top: 0;
-}
-h2 {
-    font-size: 2em;
-}
-h3 {
-    font-size: 1.5em;
-    border-bottom: 1px solid #44525f;
-}
+h1 { font-size: 2.5em; text-align: center; border-bottom: none; margin-top: 0; }
+h2 { font-size: 2em; }
+h3 { font-size: 1.6em; border-bottom-style: solid; border-bottom-width: 1px; }
+h4 { font-size: 1.3em; border-bottom-style: dashed; border-bottom-width: 1px; }
+
 
 /* Paragraphs and Links */
-p {
-    margin-bottom: 1.5em;
-    font-size: 1.1em;
-}
-a {
-    color: #00aaff; /* Accent color for links */
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-a:hover {
-    color: #4dc3ff;
-    text-decoration: underline;
-}
+p { margin-bottom: 1.5em; font-size: 1.1em; }
+a { color: #3498db; text-decoration: none; font-weight: bold; }
+a:hover { text-decoration: underline; }
 
 /* Horizontal Rule */
-hr {
-    border: 0;
-    height: 1px;
-    background-color: #333c44;
-    margin: 60px 0;
-}
+hr { border: 0; height: 1px; background-color: #ecf0f1; margin: 60px 0; }
 
 /* Project Sections */
-.project {
-    margin-bottom: 50px;
-}
+.project { margin-bottom: 50px; }
 
 /* Gallery Styles */
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px; /* Space between images */
+    gap: 20px;
     margin-top: 30px;
 }
 .gallery img {
     width: 100%;
     height: 200px;
-    object-fit: cover; /* Crop images to fit */
+    object-fit: cover;
     border-radius: 8px;
-    border: 2px solid #333c44;
+    border: 1px solid #ecf0f1;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.gallery img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 25px rgba(0, 170, 255, 0.2);
-}
+.gallery img:hover { transform: scale(1.03); box-shadow: 0 8px 25px rgba(52, 152, 219, 0.2); }
 
 /* Contact List */
-.contact-list {
-    list-style-type: none;
-    padding: 0;
-    font-size: 1.1em;
-}
-.contact-list li {
-    margin-bottom: 10px;
-}
+.contact-list { list-style-type: none; padding: 0; font-size: 1.1em; }
+.contact-list li { margin-bottom: 10px; }
 
-/* --- YENİ EKLENEN STİLLER --- */
-
-/* General Project H4 styling */
-article.project h4 {
-    color: #ffffff;
-    font-size: 1.3em;
-    border-bottom: 1px solid #44525f;
-    padding-bottom: 8px;
-    margin-top: 35px;
-    margin-bottom: 15px;
-}
+/* --- NOCTUS-06 İÇİN ÖZEL STİLLER --- */
 
 /* General features-list for projects */
-.features-list {
-    list-style-type: '✓';
-    padding-left: 25px;
-    margin-top: 20px;
-    margin-bottom: 25px;
-}
-.features-list li {
-    padding-left: 10px;
-    margin-bottom: 8px;
-}
+.features-list { list-style-type: '✓'; padding-left: 25px; margin: 20px 0 25px; }
+.features-list li { padding-left: 10px; margin-bottom: 8px; }
 
-/* Styling for Core Platform Capabilities list */
-.core-capabilities {
-    list-style: none; /* Remove default list style */
+/* Core Platform Capabilities Final Version */
+.core-capabilities-final {
+    list-style: none;
     padding: 0;
     margin-top: 25px;
+    border-left: 2px solid #3498db; /* The main blue track line */
 }
-
-.core-capabilities li {
+.core-capabilities-final li {
+    display: flex;
+    align-items: flex-start; /* Align icon with the start of the text */
     position: relative;
-    padding-left: 35px; /* Space for the icon and line */
-    margin-bottom: 20px;
-    line-height: 1.6;
-    border-left: 3px solid #00aaff; /* Blue line on the left */
-    padding-top: 5px;
-    padding-bottom: 5px;
-    font-size: 1.05em;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.core-capabilities-final li:not(:last-child) {
+    border-bottom: 1px dashed #bdc3c7; /* Dashed separator */
 }
 
-.core-capabilities li:last-child {
-    margin-bottom: 0; /* No margin for the last item */
+.capability-icon {
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    margin-right: 20px;
+    margin-left: -17px; /* Position icon over the line */
+    background-color: #ffffff; /* White background to hide the line behind the icon */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
-.core-capabilities li .icon {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 1.5em; /* Size of the emoji icon */
-    color: #00aaff; /* Color of the emoji icon */
-    margin-left: -20px; /* Adjust icon position relative to the line */
-    background-color: #1a2228; /* Match container background */
-    padding: 0 5px; /* Padding around icon to break the line visually */
+.capability-icon svg {
+    width: 100%;
+    height: auto;
+    fill: #3498db; /* Match the blue color */
 }
-
-/* Ensure strong tags within li are properly styled */
-.core-capabilities li strong {
-    color: #ffffff; /* Make the strong text white for better contrast */
-    font-size: 1.1em; /* Slightly larger font for the main heading */
+.capability-text {
+    flex-grow: 1;
+}
+.capability-text strong {
+    display: block;
+    color: #2c3e50;
+    font-size: 1.2em;
+    margin-bottom: 5px;
 }
