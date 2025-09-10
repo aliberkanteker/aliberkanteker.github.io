@@ -4,8 +4,8 @@ body {
     line-height: 1.7;
     margin: 0;
     padding: 20px;
-    background-color: #ffffff;
-    color: #4a4a4a;
+    background-color: #12181b; /* Dark background */
+    color: #cdd5e0; /* Light text */
 }
 
 /* Main Container */
@@ -13,80 +13,124 @@ body {
     max-width: 900px;
     margin: 40px auto;
     padding: 40px;
-    background-color: #ffffff;
-    border: none;
-    border-radius: 0;
-    box-shadow: none;
+    background-color: #1a2228; /* Slightly lighter dark */
+    border: 1px solid #333c44;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 /* Headings */
-h1, h2, h3, h4 {
-    color: #2c3e50;
-    border-bottom: 2px solid #3498db;
+h1, h2, h3 {
+    color: #ffffff;
+    border-bottom: 2px solid #00aaff; /* Accent color */
     padding-bottom: 10px;
     margin-top: 40px;
     margin-bottom: 20px;
 }
-h1 { font-size: 2.5em; text-align: center; border-bottom: none; margin-top: 0; }
-h2 { font-size: 2em; }
-h3 { font-size: 1.6em; border-bottom-style: solid; border-bottom-width: 1px; }
-h4 { font-size: 1.3em; border-bottom-style: dashed; border-bottom-width: 1px; }
-
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+    border-bottom: none;
+    margin-top: 0;
+}
+h2 {
+    font-size: 2em;
+}
+h3 {
+    font-size: 1.5em;
+    border-bottom: 1px solid #44525f;
+}
 
 /* Paragraphs and Links */
-p { margin-bottom: 1.5em; font-size: 1.1em; }
+p {
+    margin-bottom: 1.5em;
+    font-size: 1.1em;
+}
 .intro-text { text-align: center; }
-a { color: #3498db; text-decoration: none; font-weight: bold; }
-a:hover { text-decoration: underline; }
+a {
+    color: #00aaff; /* Accent color for links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: bold;
+}
+a:hover {
+    color: #4dc3ff;
+    text-decoration: underline;
+}
 
 /* Horizontal Rule */
-hr { border: 0; height: 1px; background-color: #ecf0f1; margin: 60px 0; }
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #333c44;
+    margin: 60px 0;
+}
 
 /* Project Sections */
-.project { margin-bottom: 50px; }
+.project {
+    margin-bottom: 50px;
+}
 .team-section p { font-size: 1.1em; }
 
 /* Gallery Styles */
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    gap: 20px; /* Space between images */
     margin-top: 30px;
 }
 .gallery img {
     width: 100%;
     height: 200px;
-    object-fit: cover;
+    object-fit: cover; /* Crop images to fit */
     border-radius: 8px;
-    border: 1px solid #ecf0f1;
+    border: 2px solid #333c44;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.gallery img:hover { transform: scale(1.03); box-shadow: 0 8px 25px rgba(52, 152, 219, 0.2); }
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 170, 255, 0.2);
+}
 
 /* Contact List */
-.contact-list { list-style-type: none; padding: 0; font-size: 1.1em; }
-.contact-list li { margin-bottom: 10px; }
+.contact-list {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.1em;
+}
+.contact-list li {
+    margin-bottom: 10px;
+}
 
+/* --- YENİ EKLENEN VE KOYU TEMAYA UYARLANAN STİLLER --- */
 
-/* --- NOCTUS-06 İÇİN ÖZEL STİLLER (ve diğer listeler) --- */
+/* General Project H4 styling */
+article.project h4 {
+    color: #ffffff;
+    font-size: 1.3em;
+    border-bottom: 1px dashed #44525f;
+    padding-bottom: 8px;
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
 
 /* General features-list for projects */
-.features-list { 
-    list-style-type: '✓'; 
-    padding-left: 25px; 
-    margin: 20px 0 25px; 
+.features-list {
+    list-style-type: '✓';
+    padding-left: 25px;
+    margin: 20px 0 25px;
 }
-.features-list li { 
-    padding-left: 10px; 
-    margin-bottom: 8px; 
+.features-list li {
+    padding-left: 10px;
+    margin-bottom: 8px;
 }
 
-/* Core Platform Capabilities Final Version */
+/* Core Platform Capabilities Final Version (Dark Theme) */
 .core-capabilities-final {
     list-style: none;
     padding: 0;
     margin-top: 25px;
-    border-left: 2px solid #3498db; /* The main blue track line */
+    border-left: 2px solid #00aaff; /* The main blue track line */
 }
 .core-capabilities-final li {
     display: flex;
@@ -95,15 +139,16 @@ hr { border: 0; height: 1px; background-color: #ecf0f1; margin: 60px 0; }
     padding: 20px 0 20px 0;
 }
 .core-capabilities-final li:not(:last-child) {
-    border-bottom: 1px dashed #bdc3c7; /* Dashed separator */
+    border-bottom: 1px dashed #44525f; /* Dashed separator for dark theme */
 }
+
 .capability-icon {
     flex-shrink: 0;
     width: 32px;
     height: 32px;
     margin-right: 20px;
     margin-left: -17px; /* Position icon over the line */
-    background-color: #ffffff; /* White background to hide the line behind the icon */
+    background-color: #1a2228; /* IMPORTANT: Match container background for dark theme */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -111,14 +156,14 @@ hr { border: 0; height: 1px; background-color: #ecf0f1; margin: 60px 0; }
 .capability-icon svg {
     width: 90%; /* Icon size within its container */
     height: auto;
-    fill: #3498db; /* Match the blue color */
+    fill: #00aaff; /* Match the accent blue color */
 }
 .capability-text {
     flex-grow: 1;
 }
 .capability-text strong {
     display: block;
-    color: #2c3e50;
+    color: #ffffff;
     font-size: 1.2em;
     margin-bottom: 5px;
 }
