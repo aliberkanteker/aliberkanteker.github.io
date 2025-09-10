@@ -11,7 +11,7 @@
 <div class="container">
     <header>
         <h1>Hello, I'm Ali Berkant Eker 👋</h1>
-        <p class="intro-text"> As a master's student in Astronomy and Space Sciences at Erciyes University, I conduct research and develop various projects in the fields of embedded systems, telemetry, and satellite technologies. I also serve as the Team Captain of the KAYSat Model Satellite Team, working together with my teammates to bring our projects to life.</p>
+        <p class="intro-text">As a master's student in Astronomy and Space Sciences at Erciyes University, I conduct research and develop various projects in the fields of embedded systems, telemetry, and satellite technologies. I also serve as the Team Captain of the KAYSat Model Satellite Team, working together with my teammates to bring our projects to life.</p>
     </header>
 
     <section class="team-section">
@@ -32,7 +32,7 @@
                 Our first project as the KAYSat team was to develop a CANSAT, a model satellite the size of a soda can. Through this project, we gained valuable experience in collecting basic sensor data, transmitting it via telemetry, and processing this data. In this work, as Team Captain, I took part in coordinating the integration of electronic systems and the software development processes.
             </p>
             <div class="gallery">
-                <img src="images/itu1.png" alt="Cansat team working on the project">
+                <img src="images/itu1.jpg" alt="Cansat team working on the project">
                 <img src="images/itu2.jpg" alt="Cansat electronics development">
                 <img src="images/itu3.jpg" alt="Presenting the Cansat sensors">
                 <img src="images/itu4.jpg" alt="Cansat prototype chassis">
@@ -52,6 +52,47 @@
                 <img src="images/sunum1.png" alt="KAYSAT Project Presentation 1">
                 <img src="images/sunum2.png" alt="KAYSAT Project Presentation 2">
             </div>
+        </article>
+
+        <article class="project">
+            <h3>NOCTUS-06 Functional CubeSat and Ground Station Platform</h3>
+            
+            <h4>Project Purpose</h4>
+            <p>
+                NOCTUS-06 is a ground-based CubeSat prototype, designed in a 1U format, that collects atmospheric data (temperature, pressure, humidity, CO2, methane, etc.) and transmits this data instantly to a ground station via RF telemetry. This project was undertaken to demonstrate the capabilities for developing low-cost satellite systems and data acquisition platforms.
+            </p>
+
+            <h4>Technical Specifications</h4>
+            <ul class="features-list">
+                <li><strong>Sensors:</strong> BME280 (Temp, Pressure, Humidity), MH-Z19 (CO2), MQ-4 (Methane), MQ-9 (Propane), MPU6050 (3-Axis Gyro & Accelerometer)</li>
+                <li><strong>Positioning:</strong> GY-NEO6MV2 GPS Module</li>
+                <li><strong>Processor:</strong> Arduino Mega 2560 Pro Mini</li>
+                <li><strong>Communication:</strong> RF900 Ultra Long Range Radio Modem (Telemetry)</li>
+                <li><strong>Power:</strong> 2x 18650 Li-ion Battery (7.4V), 5V DC-DC Converter</li>
+            </ul>
+
+            <h4>Core Platform Capabilities</h4>
+            <ul class="features-list">
+                <li><strong>🛰️ CubeSat (NOCTUS-06):</strong> Within the 1U chassis, which I personally designed and 3D modeled using SolidWorks, it precisely measures critical data once per second.</li>
+                <li><strong>📡 Real-Time Data Stream:</strong> All telemetry data collected from the satellite is packaged in JSON format and transmitted instantly to the ground station via RF telemetry modules.</li>
+                <li><strong>🖥️ Desktop User Interface (GUI):</strong> The desktop GUI application, which I developed using Electron.js and Flask (Python), visualizes incoming live data in a modern interface.</li>
+                <li><strong>💾 Dual-Layer Data Storage:</strong> For reliability and data integrity, all telemetry data is saved both to the onboard SD card in CSV format and simultaneously stored in the cloud on Firebase.</li>
+            </ul>
+
+            <h4>Project Gallery</h4>
+            <div class="gallery">
+                <img src="images/Noctus06tek.jpg" alt="NOCTUS-06 Prototype Structure">
+                <img src="images/3.UYDU.jpg" alt="NOCTUS-06 Ground Station View">
+                <img src="images/4.UYDU.jpg" alt="NOCTUS-06 Map View">
+                <img src="images/8.jpg" alt="Data Visualization on Graph">
+                <img src="images/2.UYDU.jpg" alt="Noctus-06 and Ground Station Telemetry (RF900)">
+                <img src="images/firebase_data.png" alt="Firebase Data Storage">
+            </div>
+
+            <h4>Conclusion and Learnings</h4>
+            <p>
+                This project has provided practical experience in embedded systems programming, sensor integration, power management, and wireless communication. The successful real-time transfer of data in JSON format to a Flask and Electron-based interface demonstrates a complete system integration.
+            </p>
         </article>
     </main>
     
