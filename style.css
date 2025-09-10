@@ -4,8 +4,8 @@ body {
     line-height: 1.7;
     margin: 0;
     padding: 20px;
-    background-color: #ffffff; /* --- DEĞİŞİKLİK: Beyaz arka plan --- */
-    color: #4a4a4a; /* --- DEĞİŞİKLİK: Koyu gri metin --- */
+    background-color: #ffffff;
+    color: #4a4a4a;
 }
 
 /* Main Container */
@@ -13,7 +13,7 @@ body {
     max-width: 900px;
     margin: 40px auto;
     padding: 40px;
-    background-color: #ffffff; /* --- DEĞİŞİKLİK: Beyaz arka plan --- */
+    background-color: #ffffff;
     border: none;
     border-radius: 0;
     box-shadow: none;
@@ -21,8 +21,8 @@ body {
 
 /* Headings */
 h1, h2, h3, h4 {
-    color: #2c3e50; /* --- DEĞİŞİKLİK: Koyu mavi-gri başlıklar --- */
-    border-bottom: 2px solid #3498db; /* --- DEĞİŞİKLİK: Açık mavi çizgi --- */
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
     padding-bottom: 10px;
     margin-top: 40px;
     margin-bottom: 20px;
@@ -35,6 +35,7 @@ h4 { font-size: 1.3em; border-bottom-style: dashed; border-bottom-width: 1px; }
 
 /* Paragraphs and Links */
 p { margin-bottom: 1.5em; font-size: 1.1em; }
+.intro-text { text-align: center; }
 a { color: #3498db; text-decoration: none; font-weight: bold; }
 a:hover { text-decoration: underline; }
 
@@ -43,6 +44,7 @@ hr { border: 0; height: 1px; background-color: #ecf0f1; margin: 60px 0; }
 
 /* Project Sections */
 .project { margin-bottom: 50px; }
+.team-section p { font-size: 1.1em; }
 
 /* Gallery Styles */
 .gallery {
@@ -65,11 +67,19 @@ hr { border: 0; height: 1px; background-color: #ecf0f1; margin: 60px 0; }
 .contact-list { list-style-type: none; padding: 0; font-size: 1.1em; }
 .contact-list li { margin-bottom: 10px; }
 
-/* --- NOCTUS-06 İÇİN ÖZEL STİLLER --- */
+
+/* --- NOCTUS-06 İÇİN ÖZEL STİLLER (ve diğer listeler) --- */
 
 /* General features-list for projects */
-.features-list { list-style-type: '✓'; padding-left: 25px; margin: 20px 0 25px; }
-.features-list li { padding-left: 10px; margin-bottom: 8px; }
+.features-list { 
+    list-style-type: '✓'; 
+    padding-left: 25px; 
+    margin: 20px 0 25px; 
+}
+.features-list li { 
+    padding-left: 10px; 
+    margin-bottom: 8px; 
+}
 
 /* Core Platform Capabilities Final Version */
 .core-capabilities-final {
@@ -82,13 +92,11 @@ hr { border: 0; height: 1px; background-color: #ecf0f1; margin: 60px 0; }
     display: flex;
     align-items: flex-start; /* Align icon with the start of the text */
     position: relative;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding: 20px 0 20px 0;
 }
 .core-capabilities-final li:not(:last-child) {
     border-bottom: 1px dashed #bdc3c7; /* Dashed separator */
 }
-
 .capability-icon {
     flex-shrink: 0;
     width: 32px;
@@ -101,7 +109,7 @@ hr { border: 0; height: 1px; background-color: #ecf0f1; margin: 60px 0; }
     justify-content: center;
 }
 .capability-icon svg {
-    width: 100%;
+    width: 90%; /* Icon size within its container */
     height: auto;
     fill: #3498db; /* Match the blue color */
 }
