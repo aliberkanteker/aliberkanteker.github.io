@@ -98,3 +98,67 @@ hr {
 .contact-list li {
     margin-bottom: 10px;
 }
+
+/* --- YENİ EKLENEN STİLLER --- */
+
+/* General Project H4 styling */
+article.project h4 {
+    color: #ffffff;
+    font-size: 1.3em;
+    border-bottom: 1px solid #44525f;
+    padding-bottom: 8px;
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+
+/* General features-list for projects */
+.features-list {
+    list-style-type: '✓';
+    padding-left: 25px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+.features-list li {
+    padding-left: 10px;
+    margin-bottom: 8px;
+}
+
+/* Styling for Core Platform Capabilities list */
+.core-capabilities {
+    list-style: none; /* Remove default list style */
+    padding: 0;
+    margin-top: 25px;
+}
+
+.core-capabilities li {
+    position: relative;
+    padding-left: 35px; /* Space for the icon and line */
+    margin-bottom: 20px;
+    line-height: 1.6;
+    border-left: 3px solid #00aaff; /* Blue line on the left */
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 1.05em;
+}
+
+.core-capabilities li:last-child {
+    margin-bottom: 0; /* No margin for the last item */
+}
+
+.core-capabilities li .icon {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5em; /* Size of the emoji icon */
+    color: #00aaff; /* Color of the emoji icon */
+    margin-left: -20px; /* Adjust icon position relative to the line */
+    background-color: #1a2228; /* Match container background */
+    padding: 0 5px; /* Padding around icon to break the line visually */
+}
+
+/* Ensure strong tags within li are properly styled */
+.core-capabilities li strong {
+    color: #ffffff; /* Make the strong text white for better contrast */
+    font-size: 1.1em; /* Slightly larger font for the main heading */
+}
