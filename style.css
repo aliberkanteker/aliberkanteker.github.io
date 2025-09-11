@@ -102,7 +102,7 @@ hr {
     display: flex;
     gap: 25px;
     align-items: stretch;
-    margin-top: 45px; /* DEĞİŞİKLİK: Boşluğu artırmak için 25px'ten 45px'e çıkarıldı */
+    margin-top: 60px; /* DEĞİŞİKLİK: Boşluğu artırmak için 25px'ten 45px'e çıkarıldı */
     margin-bottom: 25px;
 }
 
