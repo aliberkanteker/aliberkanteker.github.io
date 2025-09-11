@@ -102,7 +102,7 @@ hr {
     display: flex;
     gap: 25px;
     align-items: stretch;
-    margin-top: 45px;
+    margin-top: 25px;
     margin-bottom: 25px;
 }
 
@@ -160,6 +160,7 @@ hr {
     flex: 2;
 }
 
+
 /* Contact List */
 .contact-list {
     list-style-type: none;
@@ -174,11 +175,7 @@ ul {
     padding-left: 20px;
 }
 
+/* ----- YENİ EKLENEN ÖZEL BOŞLUK SINIFI ----- */
 .space-above-lg {
-    margin-top: 60px !important;
-}
-
-/* Takım fotoğrafları gibi galerilerde alanı doldurmak için özel stil */
-.gallery-cover img {
-    object-fit: cover !important; /* Diğer galeri kuralını ezip alanı doldurmasını sağlar */
+    margin-top: 60px !important; /* Standart boşluğu ezip büyük bir boşluk ekler */
 }
