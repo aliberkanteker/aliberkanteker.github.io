@@ -107,12 +107,12 @@ hr {
 }
 
 .media-text {
-    flex: 2;
+    flex: 3; /* DEĞİŞİKLİK: Metin alanı daha fazla yer kaplasın diye 2'den 3'e çıkarıldı */
 }
 
 .media-image {
     flex: 1;
-    min-width: 250px;
+    min-width: 200px; /* Minimum genişliği biraz düşürdüm */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -148,7 +148,7 @@ hr {
 /* ----- VURGULANMAK İSTENEN BÜYÜK RESİM İÇİN STİL ----- */
 .showcase-image {
     display: block;
-    max-width: 65%;
+    max-width: 55%; /* DEĞİŞİKLİK: Boyutu küçültmek için 65%'ten 55%'e düşürüldü */
     margin: 35px auto;
     border-radius: 8px;
     border: 2px solid #44525f;
