@@ -199,3 +199,48 @@ ul {
 .contact-list li {
     margin-bottom: 10px;
 }
+
+/* ==========================================================================
+   6. Özellik Blokları (Feature Blocks)
+   ========================================================================== */
+.feature-blocks-container {
+    display: flex;          /* Blokları yan yana dizer */
+    gap: 20px;              /* Bloklar arasına boşluk koyar */
+    margin-top: 50px;       /* Üstten boşluk verir */
+    margin-bottom: 25px;    /* Alttan boşluk verir */
+    flex-wrap: wrap;        /* Küçük ekranlarda alt alta inmelerini sağlar */
+}
+
+.feature-block {
+    flex: 1;                /* Her bloğun eşit genişlikte olmasını sağlar */
+    min-width: 250px;       /* Blokların minimum genişliği */
+    background-color: #12181b; /* Daha koyu bir arkaplan */
+    border: 1px solid #333c44;
+    border-radius: 8px;
+    overflow: hidden;       /* Köşelerden taşmaları engeller */
+    display: flex;
+    flex-direction: column; /* İçerikleri (resim ve yazı) alt alta dizer */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-block:hover {
+    transform: translateY(-5px); /* Üzerine gelince hafif yukarı kalkar */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+.feature-block img {
+    width: 100%;
+    height: 180px;          /* Resimlerin yükseklikleri eşit olur */
+    object-fit: cover;      /* Resmi alana sığdırır ve kırpar */
+}
+
+.feature-text {
+    padding: 15px;
+    font-size: 0.95em;      /* Biraz daha küçük yazı boyutu */
+    flex-grow: 1; /* Yazı alanının kalan boşluğu doldurmasını sağlar */
+}
+
+.feature-text p {
+    margin: 0; /* Paragrafın varsayılan boşluğunu kaldırır */
+    line-height: 1.6;
+}
