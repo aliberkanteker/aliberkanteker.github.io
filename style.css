@@ -68,7 +68,7 @@ h4 {
 }
 
 p {
-    margin-bottom: 1.2em; /* Metin akışını iyileştirmek için biraz azaltıldı */
+    margin-bottom: 1.2em;
     font-size: 1.1em;
 }
 
@@ -130,7 +130,7 @@ ul {
     background-color: #1a2228;
     border-radius: 8px;
     border: 2px solid #333c44;
-    overflow: hidden; /* Hover efektinin taşmasını önler */
+    overflow: hidden;
 }
 
 .media-image img {
@@ -138,11 +138,11 @@ ul {
     max-height: 100%;
     object-fit: contain;
     border-radius: 6px;
-    transition: transform 0.3s ease; /* Hover animasyonu eklendi */
+    transition: transform 0.3s ease;
 }
 
 .media-image:hover img {
-    transform: scale(1.05); /* Üzerine gelince hafif büyüme efekti */
+    transform: scale(1.05);
 }
 
 .project-gallery {
@@ -155,15 +155,15 @@ ul {
 
 .project-gallery img {
     width: 100%;
-    height: 220px; /* Daha tutarlı bir görünüm için sabit yükseklik */
-    object-fit: cover; /* Resimlerin kutuyu doldurması için */
+    height: 220px;
+    object-fit: cover;
     border-radius: 8px;
     border: 2px solid #333c44;
-    transition: transform 0.3s ease; /* Hover animasyonu eklendi */
+    transition: transform 0.3s ease;
 }
 
 .project-gallery img:hover {
-    transform: scale(1.03); /* Üzerine gelince hafif büyüme efekti */
+    transform: scale(1.03);
 }
 
 .showcase-image {
@@ -173,11 +173,11 @@ ul {
     border-radius: 8px;
     border: 2px solid #44525f;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease; /* Hover animasyonu eklendi */
+    transition: transform 0.3s ease;
 }
 
 .showcase-image:hover {
-    transform: scale(1.03); /* Üzerine gelince hafif büyüme efekti */
+    transform: scale(1.03);
 }
 
 /* ==========================================================================
@@ -204,43 +204,43 @@ ul {
    6. Özellik Blokları (Feature Blocks)
    ========================================================================== */
 .feature-blocks-container {
-    display: flex;          /* Blokları yan yana dizer */
-    gap: 20px;              /* Bloklar arasına boşluk koyar */
-    margin-top: 50px;       /* Üstten boşluk verir */
-    margin-bottom: 25px;    /* Alttan boşluk verir */
-    flex-wrap: wrap;        /* Küçük ekranlarda alt alta inmelerini sağlar */
+    display: flex;
+    gap: 20px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
 }
 
 .feature-block {
-    flex: 1;                /* Her bloğun eşit genişlikte olmasını sağlar */
-    min-width: 250px;       /* Blokların minimum genişliği */
-    background-color: #12181b; /* Daha koyu bir arkaplan */
+    flex: 1;
+    min-width: 250px;
+    background-color: #12181b;
     border: 1px solid #333c44;
     border-radius: 8px;
-    overflow: hidden;       /* Köşelerden taşmaları engeller */
+    overflow: hidden;
     display: flex;
-    flex-direction: column; /* İçerikleri (resim ve yazı) alt alta dizer */
+    flex-direction: column;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .feature-block:hover {
-    transform: translateY(-5px); /* Üzerine gelince hafif yukarı kalkar */
+    transform: translateY(-5px);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
 }
 
 .feature-block img {
     width: 100%;
-    height: 180px;          /* Resimlerin yükseklikleri eşit olur */
-    object-fit: cover;      /* Resmi alana sığdırır ve kırpar */
+    height: 180px;
+    object-fit: cover;
 }
 
 .feature-text {
     padding: 15px;
-    font-size: 0.95em;      /* Biraz daha küçük yazı boyutu */
-    flex-grow: 1; /* Yazı alanının kalan boşluğu doldurmasını sağlar */
+    font-size: 0.95em;
+    flex-grow: 1;
 }
 
 .feature-text p {
-    margin: 0; /* Paragrafın varsayılan boşluğunu kaldırır */
+    margin: 0;
     line-height: 1.6;
 }
