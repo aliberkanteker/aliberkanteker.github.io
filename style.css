@@ -186,9 +186,14 @@ ul {
 }
 
 .media-block-wider-text .media-text {
-    /* DEĞİŞİKLİK BURADA: Değeri 3.5'ten 4'e yükselterek fotoğrafı biraz daha küçülttüm */
     flex: 4; 
 }
+
+/* YENİ EKLENEN KURAL */
+.media-block-narrower-text .media-text {
+    flex: 2; /* Metin alanını daraltarak resmi büyütür */
+}
+
 
 .space-above-lg {
     margin-top: 60px !important;
