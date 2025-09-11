@@ -186,8 +186,8 @@ ul {
 }
 
 .media-block-wider-text .media-text {
-    /* DEĞİŞİKLİK BURADA: Değeri 4'ten 3.5'e düşürerek fotoğrafı biraz büyüttüm */
-    flex: 3.5; 
+    /* DEĞİŞİKLİK BURADA: Değeri 3.5'ten 4'e yükselterek fotoğrafı biraz daha küçülttüm */
+    flex: 4; 
 }
 
 .space-above-lg {
