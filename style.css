@@ -102,7 +102,7 @@ hr {
     display: flex;
     gap: 25px;
     align-items: stretch;
-    margin-top: 25px;
+    margin-top: 45px; /* DEĞİŞİKLİK: Boşluğu artırmak için 25px'ten 45px'e çıkarıldı */
     margin-bottom: 25px;
 }
 
@@ -140,7 +140,7 @@ hr {
 .project-gallery img {
     width: 100%;
     height: 200px;
-    object-fit: contain;
+    object-fit: cover;
     border-radius: 8px;
     border: 2px solid #333c44;
 }
@@ -157,7 +157,7 @@ hr {
 
 /* Sadece belirli bir media-block'ta resmi daha geniş yapmak için */
 .media-block-wide-image .media-text {
-    flex: 2;
+    flex: 2; /* Metin alanının oranını 3'ten 2'ye düşürerek daraltır */
 }
 
 
@@ -173,9 +173,4 @@ hr {
 
 ul {
     padding-left: 20px;
-}
-
-/* ----- YENİ EKLENEN ÖZEL BOŞLUK SINIFI ----- */
-.space-above-lg {
-    margin-top: 60px !important; /* Standart boşluğu ezip büyük bir boşluk ekler */
 }
