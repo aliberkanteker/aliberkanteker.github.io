@@ -45,18 +45,17 @@ h3 {
     margin-top: 40px;
     margin-bottom: 20px;
     position: relative; 
-    padding-left: 25px; /* Soldaki çizgi için boşluk artırıldı */
+    padding-left: 25px;
 }
 
-/* Proje başlıklarının solundaki mavi vurgu işareti */
 .project > h3::before {
     content: '';
     position: absolute;
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    height: 40px; /* Yükseklik ayarlandı */
-    width: 8px;   /* Kalınlık ayarlandı */
+    height: 40px;
+    width: 8px;
     background-color: #00aaff;
     border-radius: 4px;
 }
@@ -96,29 +95,48 @@ hr {
 /* Project Sections */
 .project {
     margin-bottom: 50px;
-    overflow: auto; /* İçindeki float elementleri sarması için */
 }
 
-/* ----- ESKİ GALERİ STİLLERİ KALDIRILDI ----- */
+/* ----- YENİ VE SAĞLAM YAPI: FLEXBOX MEDIA BLOCK ----- */
+.media-block {
+    display: flex;
+    gap: 25px; /* Metin ve resim arası boşluk */
+    align-items: flex-start; /* Dikeyde yukarı hizala */
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
 
-/* ----- YENİ EKLENEN RESİM STİLLERİ ----- */
-.inline-image {
-    max-width: 45%; /* Resim genişliği */
-    height: auto;
+.media-text {
+    flex: 2; /* Metin alanı daha fazla yer kaplasın */
+}
+
+.media-image {
+    flex: 1; /* Resim alanı daha az yer kaplasın */
+    min-width: 250px;
+}
+
+.media-image img {
+    width: 100%;
     border-radius: 8px;
     border: 2px solid #333c44;
-    margin-bottom: 10px; /* Resmin altındaki boşluk */
 }
 
-.float-right {
-    float: right;
-    margin-left: 20px; /* Resmin solundaki boşluk */
+/* ----- YENİ PROJE GALERİSİ STİLİ ----- */
+.project-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 25px;
 }
 
-.float-left {
-    float: left;
-    margin-right: 20px; /* Resmin sağındaki boşluk */
+.project-gallery img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #333c44;
 }
+
 
 /* Contact List */
 .contact-list {
@@ -128,4 +146,8 @@ hr {
 }
 .contact-list li {
     margin-bottom: 10px;
+}
+
+ul {
+    padding-left: 20px;
 }
