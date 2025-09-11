@@ -56,8 +56,8 @@ h3 {
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    height: 25px; /* Çizginin yüksekliği */
-    width: 5px;   /* Çizginin kalınlığı */
+    height: 30px; /* Çizginin yüksekliği */
+    width:10px;   /* Çizginin kalınlığı */
     background-color: #00aaff; /* Vurgu rengi */
     border-radius: 3px;
 }
