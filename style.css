@@ -97,7 +97,39 @@ hr {
     margin-bottom: 50px;
 }
 
-/* ----- BASİT VE SORUNSUZ PROJE GALERİSİ STİLİ ----- */
+/* ----- YENİ VE SAĞLAM YAPI: FLEXBOX MEDIA BLOCK ----- */
+.media-block {
+    display: flex;
+    gap: 25px; /* Metin ve resim arası boşluk */
+    align-items: stretch; /* Dikeyde öğelerin birbirini karşılamasını sağlar */
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.media-text {
+    flex: 2; /* Metin alanı daha fazla yer kaplasın */
+}
+
+.media-image {
+    flex: 1; /* Resim alanı daha az yer kaplasın */
+    min-width: 250px; /* Minimum genişlik */
+    display: flex; /* Resmin içindeki img'yi merkezlemek için */
+    align-items: center; /* Dikeyde merkezle */
+    justify-content: center; /* Yatayda merkezle */
+    background-color: #1a2228; /* Resmin arkasındaki boşluğa arkaplan rengi */
+    border-radius: 8px; /* Köşeleri yuvarla */
+    border: 2px solid #333c44; /* Resim çerçevesi */
+}
+
+.media-image img {
+    width: 100%; /* Kendi kapsayıcısının genişliğini doldursun */
+    max-height: 100%; /* Kendi kapsayıcısının yüksekliğini geçmesin */
+    object-fit: contain; /* Resmin oranını bozmadan sığdır */
+    border-radius: 6px; /* İç resmin köşeleri de yuvarlak olsun */
+}
+
+
+/* ----- PROJE GALERİSİ STİLİ ----- */
 .project-gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Resimlerin yan yana sıralanması için */
