@@ -185,9 +185,9 @@ ul {
     flex: 2;
 }
 
-/* YENİ EKLENEN KURAL */
 .media-block-wider-text .media-text {
-    flex: 4; /* Metin alanını genişletir */
+    /* DEĞİŞİKLİK BURADA: Değeri 4'ten 3.5'e düşürerek fotoğrafı biraz büyüttüm */
+    flex: 3.5; 
 }
 
 .space-above-lg {
