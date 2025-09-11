@@ -201,46 +201,43 @@ ul {
 }
 
 /* ==========================================================================
-   6. Özellik Blokları (Feature Blocks)
+   6. Vurgu Galerisi (Highlight Gallery) - Yeni Yapı
    ========================================================================== */
-.feature-blocks-container {
-    display: flex;
-    gap: 20px;
-    margin-top: 50px;
-    margin-bottom: 25px;
-    flex-wrap: wrap;
+.highlight-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Daha geniş bloklar için ayarlandı */
+    gap: 25px; /* Bloklar arası boşluk */
+    margin-top: 30px;
+    margin-bottom: 40px;
 }
 
-.feature-block {
-    flex: 1;
-    min-width: 250px;
-    background-color: #12181b;
+.highlight-item {
+    background-color: #1a2228; /* Konteyner arkaplanı */
     border: 1px solid #333c44;
-    border-radius: 8px;
-    overflow: hidden;
+    border-radius: 10px;
+    overflow: hidden; /* Resimlerin köşelerden taşmasını önler */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* İçeriği dikey sırala */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.feature-block:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+.highlight-item:hover {
+    transform: translateY(-8px); /* Üzerine gelince hafifçe yukarı kaydır */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
-.feature-block img {
+.highlight-item img {
     width: 100%;
-    height: 180px;
-    object-fit: cover;
+    height: 200px; /* Resim yüksekliği */
+    object-fit: cover; /* Resmi alanı dolduracak şekilde kırp */
+    border-bottom: 1px solid #333c44; /* Resim altına çizgi */
 }
 
-.feature-text {
-    padding: 15px;
-    font-size: 0.95em;
-    flex-grow: 1;
-}
-
-.feature-text p {
-    margin: 0;
+.highlight-item p {
+    padding: 15px 20px; /* Metin iç boşlukları */
+    font-size: 1em; /* Metin boyutu */
     line-height: 1.6;
+    color: #cdd5e0;
+    margin: 0; /* Varsayılan paragraf boşluklarını kaldır */
 }
