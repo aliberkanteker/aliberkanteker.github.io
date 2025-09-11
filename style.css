@@ -191,7 +191,7 @@ ul {
 
 /* YENİ EKLENEN KURAL */
 .media-block-narrower-text .media-text {
-    flex: 2; /* Metin alanını daraltarak resmi büyütür */
+    flex: 1.5; /* Metin alanını daraltarak resmi büyütür */
 }
 
 
