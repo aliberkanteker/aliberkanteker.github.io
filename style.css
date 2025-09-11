@@ -109,10 +109,10 @@ ul {
 .media-block {
     display: flex;
     gap: 25px;
-    align-items: center; /* Dikey olarak ortalamak için stretch yerine center */
+    align-items: center; 
     margin-top: 45px;
     margin-bottom: 25px;
-    flex-wrap: wrap; /* Küçük ekranlar için eklendi */
+    flex-wrap: wrap; 
 }
 
 .media-text {
@@ -123,7 +123,7 @@ ul {
    4. Görsel Stilleri (Image & Gallery Styles)
    ========================================================================== */
 .media-image {
-    flex: 2; /* Yazıyla daha dengeli durması için flex değeri ayarlandı */
+    flex: 1; /* <-- DEĞİŞİKLİK BURADA: Değeri 2'den 1'e düşürerek resmi küçülttüm */
     min-width: 200px;
     display: flex;
     align-items: center;
