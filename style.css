@@ -102,17 +102,17 @@ hr {
     display: flex;
     gap: 25px;
     align-items: stretch;
-    margin-top: 25px;
+    margin-top: 45px; /* DEĞİŞİKLİK: Boşluğu artırmak için 25px'ten 45px'e çıkarıldı */
     margin-bottom: 25px;
 }
 
 .media-text {
-    flex: 2; /* DEĞİŞİKLİK: Metin alanı daha fazla yer kaplasın diye 2'den 3'e çıkarıldı */
+    flex: 3;
 }
 
 .media-image {
     flex: 1;
-    min-width: 200px; /* Minimum genişliği biraz düşürdüm */
+    min-width: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -148,12 +148,18 @@ hr {
 /* ----- VURGULANMAK İSTENEN BÜYÜK RESİM İÇİN STİL ----- */
 .showcase-image {
     display: block;
-    max-width: 45%; /* DEĞİŞİKLİK: Boyutu küçültmek için 65%'ten 55%'e düşürüldü */
+    max-width: 55%;
     margin: 35px auto;
     border-radius: 8px;
     border: 2px solid #44525f;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
 }
+
+/* Sadece belirli bir media-block'ta resmi daha geniş yapmak için */
+.media-block-wide-image .media-text {
+    flex: 2; /* Metin alanının oranını 3'ten 2'ye düşürerek daraltır */
+}
+
 
 /* Contact List */
 .contact-list {
