@@ -102,7 +102,7 @@ hr {
     display: flex;
     gap: 25px;
     align-items: stretch;
-    margin-top: 45px; /* DEĞİŞİKLİK: Boşluğu artırmak için 25px'ten 45px'e çıkarıldı */
+    margin-top: 45px;
     margin-bottom: 25px;
 }
 
@@ -124,7 +124,7 @@ hr {
 .media-image img {
     width: 100%;
     max-height: 100%;
-    object-fit: contain;
+    object-fit: contain; /* Yazı yanındaki resimler kırpılmasın */
     border-radius: 6px;
 }
 
@@ -140,7 +140,7 @@ hr {
 .project-gallery img {
     width: 100%;
     height: 200px;
-    object-fit: cover;
+    object-fit: cover; /* DEĞİŞİKLİK: Resimlerin kutuyu doldurması sağlandı */
     border-radius: 8px;
     border: 2px solid #333c44;
 }
@@ -157,9 +157,8 @@ hr {
 
 /* Sadece belirli bir media-block'ta resmi daha geniş yapmak için */
 .media-block-wide-image .media-text {
-    flex: 2; /* Metin alanının oranını 3'ten 2'ye düşürerek daraltır */
+    flex: 2;
 }
-
 
 /* Contact List */
 .contact-list {
@@ -173,4 +172,8 @@ hr {
 
 ul {
     padding-left: 20px;
+}
+
+.space-above-lg {
+    margin-top: 60px !important;
 }
