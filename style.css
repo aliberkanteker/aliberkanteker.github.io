@@ -107,7 +107,7 @@ hr {
 }
 
 .media-text {
-    flex: 3; /* DEĞİŞİKLİK: Metin alanı daha fazla yer kaplasın diye 2'den 3'e çıkarıldı */
+    flex: 4; /* DEĞİŞİKLİK: Metin alanı daha fazla yer kaplasın diye 2'den 3'e çıkarıldı */
 }
 
 .media-image {
@@ -148,7 +148,7 @@ hr {
 /* ----- VURGULANMAK İSTENEN BÜYÜK RESİM İÇİN STİL ----- */
 .showcase-image {
     display: block;
-    max-width: 55%; /* DEĞİŞİKLİK: Boyutu küçültmek için 65%'ten 55%'e düşürüldü */
+    max-width: 45%; /* DEĞİŞİKLİK: Boyutu küçültmek için 65%'ten 55%'e düşürüldü */
     margin: 35px auto;
     border-radius: 8px;
     border: 2px solid #44525f;
