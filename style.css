@@ -37,10 +37,10 @@ h2 {
     font-size: 2em;
 }
 
-/* --- DEĞİŞTİRİLEN BÖLÜM BURASI --- */
+
 h3 {
     color: #ffffff;
-    font-size: 1.6em; /* Biraz büyüttüm */
+    font-size: 1.6em;
     border-bottom: 1px solid #44525f;
     padding-bottom: 10px;
     margin-top: 40px;
@@ -61,7 +61,7 @@ h3 {
     background-color: #00aaff; /* Vurgu rengi */
     border-radius: 3px;
 }
-/* --- DEĞİŞİKLİK BİTTİ --- */
+
 
 /* Paragraphs and Links */
 p {
