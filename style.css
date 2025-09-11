@@ -1,44 +1,55 @@
-/* General Body Styles */
+/* ==========================================================================
+   1. Genel Stiller (General Styles)
+   ========================================================================== */
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     line-height: 1.7;
     margin: 0;
     padding: 20px;
-    background-color: #12181b; /* Dark background */
-    color: #cdd5e0; /* Light text */
+    background-color: #12181b;
+    color: #cdd5e0;
 }
 
-/* Main Container */
 .container {
     max-width: 900px;
     margin: 40px auto;
     padding: 40px;
-    background-color: #1a2228; /* Slightly lighter dark */
+    background-color: #1a2228;
     border: 1px solid #333c44;
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
-/* Headings */
-h1, h2 {
-    color: #ffffff;
-    border-bottom: 2px solid #00aaff; /* Accent color */
-    padding-bottom: 10px;
-    margin-top: 40px;
-    margin-bottom: 20px;
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #333c44;
+    margin: 60px 0;
 }
+
+/* ==========================================================================
+   2. Tipografi (Typography)
+   ========================================================================== */
+h1, h2, h3, h4 {
+    color: #ffffff;
+}
+
 h1 {
     font-size: 2.5em;
     text-align: center;
     border-bottom: none;
     margin-top: 0;
 }
+
 h2 {
     font-size: 2em;
+    border-bottom: 2px solid #00aaff;
+    padding-bottom: 10px;
+    margin-top: 40px;
+    margin-bottom: 20px;
 }
 
 h3 {
-    color: #ffffff;
     font-size: 1.6em;
     border-bottom: 1px solid #44525f;
     padding-bottom: 10px;
@@ -46,6 +57,41 @@ h3 {
     margin-bottom: 20px;
     position: relative; 
     padding-left: 25px;
+}
+
+h4 {
+    font-size: 1.3em;
+    border-bottom: 1px solid #44525f;
+    padding-bottom: 8px;
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 1.2em; /* Metin akışını iyileştirmek için biraz azaltıldı */
+    font-size: 1.1em;
+}
+
+a {
+    color: #00aaff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #4dc3ff;
+    text-decoration: underline;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+/* ==========================================================================
+   3. Bölüm ve Proje Yapıları (Layout & Project Structure)
+   ========================================================================== */
+.project {
+    margin-bottom: 50px;
 }
 
 .project > h3::before {
@@ -60,44 +106,6 @@ h3 {
     border-radius: 4px;
 }
 
-h4 {
-    color: #ffffff;
-    font-size: 1.3em;
-    border-bottom: 1px solid #44525f;
-    padding-bottom: 8px;
-    margin-top: 35px;
-    margin-bottom: 15px;
-}
-
-/* Paragraphs and Links */
-p {
-    margin-bottom: 1.5em;
-    font-size: 1.1em;
-}
-a {
-    color: #00aaff;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-a:hover {
-    color: #4dc3ff;
-    text-decoration: underline;
-}
-
-/* Horizontal Rule */
-hr {
-    border: 0;
-    height: 1px;
-    background-color: #333c44;
-    margin: 60px 0;
-}
-
-/* Project Sections */
-.project {
-    margin-bottom: 50px;
-}
-
-/* ----- FLEXBOX MEDIA BLOCK ----- */
 .media-block {
     display: flex;
     gap: 25px;
@@ -110,6 +118,9 @@ hr {
     flex: 3;
 }
 
+/* ==========================================================================
+   4. Görsel Stilleri (Image & Gallery Styles)
+   ========================================================================== */
 .media-image {
     flex: 1;
     min-width: 200px;
@@ -119,16 +130,21 @@ hr {
     background-color: #1a2228;
     border-radius: 8px;
     border: 2px solid #333c44;
+    overflow: hidden; /* Hover efektinin taşmasını önler */
 }
 
 .media-image img {
     width: 100%;
     max-height: 100%;
-    object-fit: contain; /* Yazı yanındaki resimler kırpılmasın */
+    object-fit: contain;
     border-radius: 6px;
+    transition: transform 0.3s ease; /* Hover animasyonu eklendi */
 }
 
-/* ----- PROJE GALERİSİ STİLİ ----- */
+.media-image:hover img {
+    transform: scale(1.05); /* Üzerine gelince hafif büyüme efekti */
+}
+
 .project-gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -139,13 +155,17 @@ hr {
 
 .project-gallery img {
     width: 100%;
-    /* height: 200px; <--- BU SATIRI SİL! */
-    object-fit: contain; /* DEĞİŞİKLİK: Resimlerin kırpılmadan alana sığmasını sağla */
+    height: 220px; /* Daha tutarlı bir görünüm için sabit yükseklik */
+    object-fit: cover; /* Resimlerin kutuyu doldurması için */
     border-radius: 8px;
     border: 2px solid #333c44;
+    transition: transform 0.3s ease; /* Hover animasyonu eklendi */
 }
 
-/* ----- VURGULANMAK İSTENEN BÜYÜK RESİM İÇİN STİL ----- */
+.project-gallery img:hover {
+    transform: scale(1.03); /* Üzerine gelince hafif büyüme efekti */
+}
+
 .showcase-image {
     display: block;
     max-width: 55%;
@@ -153,14 +173,24 @@ hr {
     border-radius: 8px;
     border: 2px solid #44525f;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease; /* Hover animasyonu eklendi */
 }
 
-/* Sadece belirli bir media-block'ta resmi daha geniş yapmak için */
+.showcase-image:hover {
+    transform: scale(1.03); /* Üzerine gelince hafif büyüme efekti */
+}
+
+/* ==========================================================================
+   5. Özel Sınıflar (Utility Classes)
+   ========================================================================== */
 .media-block-wide-image .media-text {
     flex: 2;
 }
 
-/* Contact List */
+.space-above-lg {
+    margin-top: 60px !important;
+}
+
 .contact-list {
     list-style-type: none;
     padding: 0;
@@ -168,12 +198,4 @@ hr {
 }
 .contact-list li {
     margin-bottom: 10px;
-}
-
-ul {
-    padding-left: 20px;
-}
-
-.space-above-lg {
-    margin-top: 60px !important;
 }
