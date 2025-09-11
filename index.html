@@ -58,35 +58,52 @@
             <h3>NOCTUS-06 Functional CubeSat and <br> Ground Station Platform</h3>
             <p><em>Developed by: Ali Berkant Eker</em></p>
             
-            <h4>Project Purpose</h4>
-            <p>
-                NOCTUS-06 is a ground-based CubeSat prototype, designed in a 1U format, that collects atmospheric data (temperature, pressure, humidity, CO2, methane, etc.) and transmits this data instantly to a ground station via RF telemetry. This project was undertaken to demonstrate the capabilities for developing low-cost satellite systems and data acquisition platforms.
-            </p>
+            <div class="media-block">
+                <div class="media-text">
+                    <h4>Project Purpose</h4>
+                    <p>
+                        NOCTUS-06 is a ground-based CubeSat prototype, designed in a 1U format, that collects atmospheric data (temperature, pressure, humidity, CO2, methane, etc.) and transmits this data instantly to a ground station via RF telemetry. This project was undertaken to demonstrate the capabilities for developing low-cost satellite systems and data acquisition platforms.
+                    </p>
+                </div>
+                <div class="media-image">
+                    <img src="images/Ncts1.jpg" alt="NOCTUS-06 Satellite">
+                </div>
+            </div>
 
-            <h4>Core Platform Capabilities</h4>
-            <ul>
-                <li><strong>🛰️ CubeSat (NOCTUS-06):</strong> Within the 1U chassis, which I personally designed and 3D modeled using SolidWorks, it precisely measures critical data once per second.</li>
-                <li><strong>📡 Real-Time Data Stream:</strong> All telemetry data is packaged in JSON format and transmitted instantly to the ground station via RF telemetry modules.</li>
-                <li><strong>🖥️ Desktop User Interface (GUI):</strong> The desktop GUI application, which I developed using Electron.js and Flask (Python), visualizes incoming live data, displays the satellite's position on a map, and presents sensor data with real-time graphs.</li>
-                <li><strong>💾 Dual-Layer Data Storage:</strong> For reliability and data integrity, I established a dual-layer storage architecture saving data to an onboard SD card and simultaneously to the cloud on Firebase.</li>
-            </ul>
+            <div class="media-block">
+                 <div class="media-image">
+                    <img src="images/Ncts2.jpg" alt="Ground Station">
+                </div>
+                <div class="media-text">
+                    <h4>Core Platform Capabilities</h4>
+                    <ul>
+                        <li><strong>🛰️ CubeSat (NOCTUS-06):</strong> 1U chassis designed in SolidWorks, measures critical data once per second.</li>
+                        <li><strong>📡 Real-Time Data Stream:</strong> Data is packaged in JSON format and transmitted instantly via RF telemetry.</li>
+                        <li><strong>🖥️ Desktop User Interface (GUI):</strong> Custom GUI visualizes live data, map positions, and real-time graphs.</li>
+                        <li><strong>💾 Dual-Layer Data Storage:</strong> Data is saved to an onboard SD card and simultaneously stored on Firebase.</li>
+                    </ul>
+                </div>
+            </div>
 
-            <h4>Technical Specifications</h4>
-            <ul>
-                <li><strong>Sensors:</strong> BME280, MH-Z19, MQ-4, MQ-9, MPU600</li>
-                <li><strong>Positioning:</strong> GY-NEO6MV2 GPS Module</li>
-                <li><strong>Processor:</strong> Arduino Mega 2560 Pro Mini</li>
-                <li><strong>Communication:</strong> RF900 Ultra Long Range Radio Modem</li>
-                <li><strong>Power:</strong> 2x 18650 Li-ion Battery (7.4V), 5V DC-DC Converter</li>
-            </ul>
-            
-            <h4>Project Gallery</h4>
+            <div class="media-block">
+                <div class="media-text">
+                    <h4>Technical Specifications</h4>
+                    <ul>
+                        <li><strong>Sensors:</strong> BME280, MH-Z19, MQ-4, MQ-9, MPU6050</li>
+                        <li><strong>Positioning:</strong> GY-NEO6MV2 GPS Module</li>
+                        <li><strong>Processor:</strong> Arduino Mega 2560 Pro Mini</li>
+                        <li><strong>Communication:</strong> RF900 Ultra Long Range Radio Modem</li>
+                        <li><strong>Power:</strong> 2x 18650 Li-ion Battery (7.4V), 5V DC-DC Converter</li>
+                    </ul>
+                </div>
+                <div class="media-image">
+                    <img src="images/Ncts5.jpeg" alt="Circuit Detail">
+                </div>
+            </div>
+            <h4>Additional Project Images</h4>
              <div class="project-gallery">
-                <img src="images/Ncts1.jpg" alt="NOCTUS-06 Satellite">
-                <img src="images/Ncts2.jpg" alt="Ground Station">
                 <img src="images/Ncts3.jpg" alt="Map View">
                 <img src="images/Ncts4.jpeg" alt="Development Process">
-                <img src="images/Ncts5.jpeg" alt="Circuit Detail">
                 <img src="images/firebase_data.png" alt="Firebase Storage">
             </div>
 
