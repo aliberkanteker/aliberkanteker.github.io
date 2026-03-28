@@ -305,8 +305,31 @@ hr.subsection-divider {
         text-align: center !important;
     }
 
-    .field-test-item p {
-        margin-top: 12px !important;
-        text-align: center !important;
-    }
+   .field-test-row {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin: 40px 0;
+    text-align: left;
+}
+
+.field-test-row img {
+    width: 220px;
+    max-width: 220px;
+    height: auto;
+    display: block;
+    margin: 0;
+    flex-shrink: 0;
+    border-radius: 8px;
+}
+
+.field-test-row p {
+    flex: 1;
+    margin: 0;
+    max-width: none;
+    text-align: left;
+    color: #aeb9c5;
+    font-size: 1em;
+    line-height: 1.6;
+}
 }
