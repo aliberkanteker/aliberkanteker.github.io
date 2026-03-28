@@ -122,6 +122,9 @@ ul {
 /* ==========================================================================
    4. Görsel Stilleri (Image & Gallery Styles)
    ========================================================================== */
+/* ==========================================================================
+   4. Görsel Stilleri (Image & Gallery Styles)
+   ========================================================================== */
 .media-image {
     flex: 1;
     min-width: 200px;
@@ -169,7 +172,7 @@ ul {
     max-width: 220px;
     height: auto;
     display: block;
-    margin: 0 auto;
+    margin: 0;
     border-radius: 8px;
 }
 
@@ -177,10 +180,13 @@ ul {
     transform: scale(1.03);
 }
 
+/* Flight test images + text side by side */
 .field-test-item {
-    max-width: 320px;
-    margin: 40px auto;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin: 40px 0;
+    text-align: left;
 }
 
 .field-test-item img {
@@ -188,15 +194,17 @@ ul {
     max-width: 100%;
     height: auto;
     display: block;
-    margin: 0 auto 12px;
+    flex-shrink: 0;
+    margin: 0;
     border-radius: 8px;
 }
 
 .field-test-item p {
-    max-width: 100%;
-    margin: 12px auto 0;
+    flex: 1;
+    max-width: none;
+    margin: 0;
     color: #aeb9c5;
-    font-size: 0.95em;
+    font-size: 1em;
     line-height: 1.6;
 }
 
@@ -244,6 +252,17 @@ ul {
     line-height: 1.6;
 }
 
+@media (max-width: 768px) {
+    .field-test-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .field-test-item p {
+        margin-top: 12px;
+    }
+}
 hr.subsection-divider {
     margin: 50px auto;
     width: 60%;
