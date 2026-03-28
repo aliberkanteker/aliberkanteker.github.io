@@ -265,3 +265,48 @@ hr.subsection-divider {
     width: 60%;
     background-color: #44525f; /* Daha yumuşak bir ayırıcı rengi */
 }
+/* ===== Flight test images: image left, text right ===== */
+.field-test-item {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    gap: 24px !important;
+    margin: 40px 0 !important;
+    max-width: none !important;
+    text-align: left !important;
+}
+
+.field-test-item .showcase-image,
+.field-test-item img {
+    width: 220px !important;
+    max-width: 220px !important;
+    height: auto !important;
+    display: block !important;
+    margin: 0 !important;
+    flex-shrink: 0 !important;
+    border-radius: 8px !important;
+}
+
+.field-test-item p {
+    flex: 1 !important;
+    max-width: none !important;
+    margin: 0 !important;
+    text-align: left !important;
+    color: #aeb9c5 !important;
+    font-size: 1em !important;
+    line-height: 1.6 !important;
+}
+
+@media (max-width: 768px) {
+    .field-test-item {
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+    }
+
+    .field-test-item p {
+        margin-top: 12px !important;
+        text-align: center !important;
+    }
+}
