@@ -55,7 +55,7 @@ h3 {
     padding-bottom: 10px;
     margin-top: 40px;
     margin-bottom: 20px;
-    position: relative; 
+    position: relative;
     padding-left: 25px;
 }
 
@@ -109,10 +109,10 @@ ul {
 .media-block {
     display: flex;
     gap: 25px;
-    align-items: center; 
+    align-items: center;
     margin-top: 45px;
     margin-bottom: 25px;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
 }
 
 .media-text {
@@ -164,12 +164,13 @@ ul {
     transform: scale(1.03);
 }
 
+/* Genel showcase görseli */
 .showcase-image {
     width: 100%;
-    max-width: 220px;
+    max-width: 420px;
     height: auto;
     display: block;
-    margin: 0;
+    margin: 0 auto;
     border-radius: 8px;
 }
 
@@ -177,7 +178,7 @@ ul {
     transform: scale(1.03);
 }
 
-/* Flight test images: image left, text right */
+/* Flight test images: solda görsel, sağda açıklama */
 .field-test-item {
     display: flex;
     align-items: center;
@@ -187,8 +188,8 @@ ul {
     text-align: left;
 }
 
-.field-test-item img,
-.field-test-item .showcase-image {
+.field-test-item .showcase-image,
+.field-test-item img {
     width: 220px;
     max-width: 220px;
     height: auto;
@@ -200,18 +201,12 @@ ul {
 
 .field-test-item p {
     flex: 1;
-    margin: 0;
     max-width: none;
+    margin: 0;
     text-align: left;
     color: #aeb9c5;
     font-size: 1em;
     line-height: 1.6;
-}
-
-hr.subsection-divider {
-    margin: 50px auto;
-    width: 60%;
-    background-color: #44525f;
 }
 
 /* ==========================================================================
@@ -222,13 +217,12 @@ hr.subsection-divider {
 }
 
 .media-block-wider-text .media-text {
-    flex: 4; 
+    flex: 4;
 }
 
 .media-block-narrower-text .media-text {
-    flex: 1.5; 
+    flex: 1.5;
 }
-
 
 .space-above-lg {
     margin-top: 100px !important;
@@ -239,78 +233,13 @@ hr.subsection-divider {
     padding: 0;
     font-size: 1.1em;
 }
+
 .contact-list li {
     margin-bottom: 10px;
 }
 
-.field-test-item {
-    margin-top: 50px;
-    text-align: center;
-}
-
-.field-test-item p {
-    max-width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 15px;
-    color: #aeb9c5;
-    font-size: 1em;
-    line-height: 1.6;
-}
-
-@media (max-width: 768px) {
-    .field-test-item {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .field-test-item p {
-        margin-top: 12px;
-    }
-}
 hr.subsection-divider {
     margin: 50px auto;
     width: 60%;
-    background-color: #44525f; /* Daha yumuşak bir ayırıcı rengi */
-}
-/* ===== Flight test images: image left, text right ===== */
-.field-test-item {
-    display: flex !important;
-    flex-direction: row !important;
-    align-items: center !important;
-    justify-content: flex-start !important;
-    gap: 24px !important;
-    margin: 40px 0 !important;
-    max-width: none !important;
-    text-align: left !important;
-}
-
-.field-test-item .showcase-image,
-.field-test-item img {
-    width: 220px !important;
-    max-width: 220px !important;
-    height: auto !important;
-    display: block !important;
-    margin: 0 !important;
-    flex-shrink: 0 !important;
-    border-radius: 8px !important;
-}
-
-.field-test-item p {
-    flex: 1 !important;
-    max-width: none !important;
-    margin: 0 !important;
-    text-align: left !important;
-    color: #aeb9c5 !important;
-    font-size: 1em !important;
-    line-height: 1.6 !important;
-}
-
-@media (max-width: 768px) {
-    .field-test-item {
-        flex-direction: column !important;
-        align-items: center !important;
-        text-align: center !important;
-    }
+    background-color: #44525f;
 }
