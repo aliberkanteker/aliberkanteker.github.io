@@ -134,7 +134,7 @@ ul {
    ========================================================================== */
 .media-image {
     flex: 1;
-    min-width: 200px;
+    min-width: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
