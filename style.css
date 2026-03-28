@@ -283,3 +283,23 @@ hr.subsection-divider {
         align-items: stretch;
     }
 }
+.blue-underline {
+    border-bottom: 1px solid #00aaff !important;
+}
+
+.accent-title {
+    position: relative;
+    padding-left: 25px;
+}
+
+.accent-title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 40px;
+    width: 8px;
+    background-color: #00aaff;
+    border-radius: 4px;
+}
