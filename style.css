@@ -78,6 +78,8 @@ h4 {
 p {
     margin-bottom: 1.2em;
     font-size: 1.05em;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 a {
